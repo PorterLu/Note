@@ -1,0 +1,160 @@
+\documentclass[twocolumn]{ctexart}
+\usepackage{listings}
+\usepackage{clrscode}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{bicaption}
+\usepackage{balance}
+\balance
+\bibliographystyle{plain}
+\title{一起学习 \LaTeX}
+\author{porter \\123@qq.com \and university}
+\date{\today}
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \clearpage
+    Hello world!
+
+    Hello again
+
+    \section{Title}
+        \subsection{subTitle}
+            \subsubsection{subsubtitle}
+                \subparagraph{today, we are going to learn about paper typesetting}
+
+            \subsubsection{转义}
+
+        \subsection{列表}
+            \subsubsection{item}
+                \begin{itemize}
+                    \item itemize
+                    \item enumerate
+                    \item description
+                \end{itemize}
+            \subsubsection{enumerate}
+                \begin{enumerate}
+                    \item itemize
+                    \item enumerate
+                    \item description
+                \end{enumerate}
+            \subsubsection{description}
+                \begin{description}
+                    \item[itemize] dot
+                    \item[enumerate] num
+                    \item[description] des
+                \end{description}
+
+            \subsection{code}
+                \subsubsection{short code}
+                    \verb |#include <stdio.h>|
+                \subsubsection{long code}
+                    \begin{verbatim}
+                        #include <stdio.h>
+                        int main(void){
+                            printf("hello world\n");
+                        }
+                    \end{verbatim}
+                
+                    \begin{lstlisting}[language=C]
+                        #include <stdio.h>
+                        int main(void){
+                            printf("hello world\n");
+                        }
+                    \end{lstlisting}
+
+                \subsubsection{data structure}
+                    \begin{codebox}
+                        \Procname{$\proc{Merge-Sort}(A, p, r)$}
+                        \li \If $p<r$
+                        \li \Then $q \gets \lfloor(p+r)/
+                        2\rfloor$
+                        \li $\proc{Merge-Sort}(A, p, q)$
+                        \li $\proc{Merge-Sort}(A, p+1, q)$
+                        \li $\proc{Merge-Sort}(A, p, q, r)$
+                            \End
+                    \end{codebox}
+            \subsection{注脚}
+            欧几里德\footnote{数学家}
+        \section{数学公式}
+            \emph{数学公式必须在数学模式下输入}
+            \subsection{数学结构}
+                \subsubsection{行内公式}
+                    爱因斯坦提出了质能方程: $E = MC^2$
+                \subsubsection{显示公式}
+                $$x_{1,2} = \frac{-b \pm \sqrt[2]{b^2 - 4ac}}{2a}$$
+                \begin{equation}
+                    F_1 = F_2 = \frac{Gm_1m_2}{r^2}
+                \end{equation}
+                \begin{equation}
+                    \int_a^b f(x) \mathrm{d}x = F(x) |_a^b = F(b) - F(a)
+                \end{equation}
+                \[
+                    \begin{bmatrix}
+                        1 & 0 & \cdots & 9 \\
+                        0 & 1 & \cdots & 0 \\
+                        \vdots & \vdots & \ddots & \vdots \\
+                        0 & 0 & \cdots & 1 \\
+                    \end{bmatrix}  
+                \]
+
+                \num{-1.23e45}{m/s}
+                \SI{2999999999}{m/s}\\
+                \begin{tabular}{|S|}
+                    \hline 
+                    -2345\\
+                    \hline
+                    123\\
+                    \hline
+                \end{tabular} 
+            \subsection{图表}
+                \begin{tabular}{ccc}
+                    \hline
+                    left & center & right \\
+                    \hline
+                    文本左对齐 & 居中对齐 & 右对齐 \\
+                    \hline
+                \end{tabular}
+                \begin{table}[h]
+                    \centering
+                    \caption{标题}
+                    \label{表格}
+                    \begin{tabular}{cccc}
+                        \hline
+                        \bfseries Do & \bfseries You  & \bfseries Love & \bfseries Me \\
+                        \hline
+                        Yesterday & Yes & Yes & Yes \\
+                        Today & of Course & of Course & of Course \\
+                        Tomorrow & Yes & Yes & Yes \\
+                        \hline
+                    \end{tabular}
+                \end{table}
+                \subsubsection{another table}
+                another table described below, another table described below, another table described below,
+                another table described below, another table described below, another table described below,
+                another table described below, another table described below, another table described below
+
+                \begin{table}[h] % here, top, bottom, page
+                    \centering
+                    \begin{tabular}{cccc}
+                        \toprule
+                        \bfseries Do & \bfseries You  & \bfseries Love & \bfseries Me \\
+                        \midrule
+                        Yesterday & Yes & Yes & Yes \\
+                        Today & of Course & of Course & of Course \\
+                        Tomorrow & Yes & Yes & Yes \\
+                        \bottomrule
+                    \end{tabular}
+                \end{table}
+                \begin{figure}
+                    \centering
+                    \caption{标题}
+                    \includegraphics[scale = 0.3]{4-1-1.png}
+                \end{figure}
+
+                \bibliography{baiduxueshu_papers_20221001220957.bib}
+                \nocite{*}
+\end{document}
