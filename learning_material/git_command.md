@@ -12,7 +12,7 @@
 4.git push origin master(或者其他分支) 将该分支提交到远程  
 5.git branch 名字 可以创建一个分支，而git checkout 分支名可以切换一个分支  
 6.git pull 可以将远程的内容同步到当前分支是fetch和merge的一步化操作，merge有冲突需要再修改后用git add .通知已经修改冲突处，用git commit完成冲突merge  
-7.git reset,用于git的回退，如git reset --soft HEAD^,这样就撤销了1次commit，但是代码任然保留，HEAD^的意思是上一个版本，也可以写成HEAD\~1,如果想进行了两次commit都想撤回，可以使用HEAD\~2。使用--mixed选项也意味着不删除工作空间改动代码，而是撤销commit，并且git add。所以git reset --mixed HEAD^的作用和git reset HEAD^的效果是一样的。git --hard相较于git --soft会删除工作空间改动代码。
+7.git reset,用于git的回退，如git reset --soft HEAD^,这样就撤销了1次commit，但是代码任然保留，HEAD^的意思是上一个版本，也可以写成HEAD\~1,如果想进行了两次commit都想撤回，可以使用HEAD\~2。使用--mixed选项也意味着不删除工作空间改动代码，而是撤销commit，并且git add。所以git reset --mixed HEAD^的作用和git reset HEAD^的效果是一样的。git --hard相较于git --soft会删除工作空间改动代码。 
 8.git submodule add git_addr,可以添加一个submodule，可以用于管理子项目，进入子项目目录，执行如下指令:
 ```
 git submodule init
