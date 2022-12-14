@@ -7,7 +7,8 @@
 `push +n`,将第n个目录移动到栈顶，并cd到该目录  
 `dirs`, 可以显示栈里的所有路径，`-c`可以清除所有路径  
 `popd`,可以弹出0号目录，并cd到新的栈顶  
-`popd +n`:可以弹出具体的路径 
+`popd +n`:可以弹出具体的路径  
+## 二进制生成
 `riscv64-linux-objdump -D -b binary -m riscv xxx.bin > xxx.asm` 可以反汇编bin文件
 
 
