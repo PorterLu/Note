@@ -1,0 +1,3 @@
+[submodule "ysyx_record"]
+	path = ysyx_record
+	url = git@github.com:PorterLu/ysyx_record.git
