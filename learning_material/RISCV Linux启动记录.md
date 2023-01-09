@@ -130,9 +130,15 @@ sudo vi rcS
 #!/bin/sh
 mount -t proc none /proc
 mount -t sysfs none /sys
+/bin/mount -a
 /sbin/mdev -s
 
 sudo chmod +x rcS
+
+#fstab内容如下
+#<file system>   <mount point>   <type>  <options>       <dump>  <pass>
+proc            /proc           proc            defaults    0        0
+sysfs           /sys            sysfs           defaults    0        0
 ```
 
 其中`mount -t proc none /proc`意味着将`none`挂载到`/proc`上，类型为`proc`伪文件系统。`mdev`是`busybox`提供的一个工具，用在嵌入式系统中，相当于简化版的udev，作用是在系统启动和热插拔或动态加载驱动程序时，自动创建设备节点。文件系统中的/dev目录下的设备节点都是由mdev创建的。
