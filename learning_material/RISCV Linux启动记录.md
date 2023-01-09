@@ -135,6 +135,8 @@ mount -t sysfs none /sys
 sudo chmod +x rcS
 ```
 
+其中`mount -t proc none /proc`意味着将`none`挂载到`/proc`上，类型为`proc`伪文件系统。`mdev`是`busybox`提供的一个工具，用在嵌入式系统中，相当于简化版的udev，作用是在系统启动和热插拔或动态加载驱动程序时，自动创建设备节点。文件系统中的/dev目录下的设备节点都是由mdev创建的。
+
 ​	之后`sudo umount rootfs`
 
 ## 启动
