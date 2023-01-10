@@ -21,4 +21,4 @@ sudo mount /dev/sda2 ./sda2
 /dev/sda2 /home/ubuntu/sda2 ext4 defaults 0 1
 ```
 
-​	`sudo chomod 666 fstab`，重启虚拟机完成。
+`sudo chomod 666 fstab`，重启虚拟机完成。出现问题，`sudo gparted`, 将新生成的分区删除，之后将新增的空间合并到原本的分区。
