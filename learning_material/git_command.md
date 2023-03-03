@@ -19,5 +19,5 @@ git submodule init
 git submodule update
 ```
 9.git show commit_id, 显示这个commit修改的内容  
-
+10.git rm --cache filename, 删除git缓冲区中的内容
   
