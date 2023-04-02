@@ -12,5 +12,7 @@
 `riscv64-linux-objdump -D -b binary -m riscv xxx.bin > xxx.asm` 可以反汇编bin文件
 
 ## Ubuntu 图标隐藏
+```shell
 gsettings set org.gnome.shell.extensions.desktop-icons show-home false
 gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
+```
