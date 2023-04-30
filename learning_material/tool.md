@@ -7,3 +7,6 @@ wallhaven.cc
 
 ## tmux
 在`./tmux.conf`设置`set -g mouse on`, 之后使用`tmux source`将其生效。这样就可以在`tmux`中进行鼠标滑动
+
+## convert
+图片格式转化，`sudo apt-get install imagemagick`，之后使用`convert mandelbrot.ppm mandelbrot.jpg`可以将`raw`格式的文件转化为`jpg`文件
