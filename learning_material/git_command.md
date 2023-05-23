@@ -20,4 +20,6 @@ git submodule update
 ```
 9.git show commit_id, 显示这个commit修改的内容  
 10.git rm --cache filename, 删除git缓冲区中的内容
+11. 在commit信息中添加Co-authored-by: name <email>, 可以添加共同作者
+12. git commit -amend 可以修改最近一个commit的message
   
