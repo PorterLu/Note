@@ -10,3 +10,10 @@ wallhaven.cc
 
 ## convert
 图片格式转化，`sudo apt-get install imagemagick`，之后使用`convert mandelbrot.ppm mandelbrot.jpg`可以将`raw`格式的文件转化为`jpg`文件
+
+## tee
+使用`tee`可以输出信息的同时将输出的信息存到文件中，`./test 2>&1 | tee out.txt`  
+其中`2>&1`意味着将错误也做为标准输出
+
+## tool
+在vim中使用`:%!xxd`将打开的二进制转化为16进制形式，修改后使用`:%!xxd -r`进行恢复，最后保存就可以完成二进制文件修改
