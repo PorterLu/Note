@@ -43,5 +43,10 @@ sgdisk -i 1 /dev/sdb
 ```shell
 sgdisk -c 1:"test" /dev/sdb
 ```
+## cloudflare
+To connect for the very first time you must call register first:
 
+    Register the client warp-cli register.
+    Connect warp-cli connect.
+    Run curl https://www.cloudflare.com/cdn-cgi/trace/ and verify that warp=on.
 
