@@ -50,3 +50,6 @@ To connect for the very first time you must call register first:
     Connect warp-cli connect.
     Run curl https://www.cloudflare.com/cdn-cgi/trace/ and verify that warp=on.
 
+## qqmusic
+sudo vim /usr/share/applications/qqmusic.desktop  
+在Exec后面添加--no-sandbox
