@@ -52,4 +52,10 @@ To connect for the very first time you must call register first:
 
 ## qqmusic
 sudo vim /usr/share/applications/qqmusic.desktop  
+
+## cpio
+使用cpio -o -H newc进行创建一个Linux启动用的根目录  
+1. cpio是一个创建、提取和处理cpio存档的命令行工具
+2. -o 这是cpio的一个选项，表示将文件打包到存档中
+3. -H newc，其中-H用于指定格式，而newc表示Linux启动过程中特定的cpio格式
 在Exec后面添加--no-sandbox
