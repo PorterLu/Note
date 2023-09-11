@@ -63,3 +63,6 @@ sudo vim /usr/share/applications/qqmusic.desktop
 ## scp
 secure copy: scp local_file user_name@ip_address:remote_file。这样就可以将文件拷贝到远程。
 
+## asciidocFX
+可以编辑adoc文件，并同时进行渲染，windows和linux平台皆可傻瓜式下载。
+
