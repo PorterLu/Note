@@ -66,3 +66,15 @@ secure copy: scp local_file user_name@ip_address:remote_file。这样就可以�
 ## asciidocFX
 可以编辑adoc文件，并同时进行渲染，windows和linux平台皆可傻瓜式下载。
 
+## webp
+WebP 格式是一种旨在加快图片加载速度的图片格式。图片压缩体积大约只有 JPEG 的2/3，并能节省大量的服务器宽带资源和数据空间。在ubuntu上要对webp格式和jpg格式进行转化可以下载webp工具：
+```shell
+sudo apt install webp
+
+## from jpg,png to webp
+cwebp -q 80 image.png -o image.webp
+
+## from webp to jpg,png
+dwebp image.webp -o image.png
+
+```
