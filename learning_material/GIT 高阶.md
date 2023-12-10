@@ -42,3 +42,11 @@ git merge --squash <branch>
 ```
 
 ​	与普通的`merge`自动创建一个`merge commit`不同，`--squash`会自动在`working copy`中留下一个`local change`，然后之后我们可以自己进行提交。
+
+### git stash
+  这次对stash命令进行系统的总结
+* git stash save "save message"， 可以将修改的操作存到暂存的缓冲区，而不用进行提交
+* git stash list，可以列出现在所有暂存的修改
+* git stash pop，应用缓存的修改，并在列表中将对应的缓存进行删除
+* git stash apply，和pop类似，但是不进行删除的操作
+* git stash drop，删除某一缓存
